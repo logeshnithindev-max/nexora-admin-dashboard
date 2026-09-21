@@ -1,0 +1,71 @@
+Masters ......
+    Basic metrics
+    Channel Metrics
+
+        ||
+        
+Plans Masters:
+    Subscription plans.      ==================>    Subscription plan metrics
+
+        ||
+
+Clients and projects masters
+    Masters_client
+    Masters_project
+        
+        ||
+    
+    client_subscriptions:
+        client_id, project_id, plan_id 
+
+
+Actusl Client Data (clickhouse + Mysql):
+    Client A -> Project A1        
+                    ===================> DB => Client_A_DB (mysql + clickhouse)
+    Client A -> Project A2
+
+    Client B -> Project B1  ===================> DB => Client_B_DB (mysql + clickhouse)
+
+
+Script:
+
+    1) Get available projects:
+        Masters_project ====> contains client_id, project_id, .....
+
+        1) Need to get the Subscription metrics configurations based on project_id .......
+            1) active_users , monthly 1000 free, overage_price : 10$ per user..
+            2) datapoints , monthly 100000 free, overage_price : 1$ per point..
+            3) email sent , monthly 100 free, overage_price : 15$ per email..
+
+        2) Find Database space for each clients based on client_id:
+            Masters databawse credentials ==========> contains mysql and clickhouse passwords and connection details .....
+
+        3) Get the actual values from client DB ........
+            1) Get the actual active users.  => 20000
+            2) Get the data points  =>  50000
+            3) Get email sents  => 1500
+
+        4) Chcek the Subscription plans table based on project_id...
+            1) Get the billing cycle (eg : monthly or weekly)
+            2) When bullung cycle reaches ... its calculate the prices based on the plan metrics config and actual client values ...
+
+        5) Generate bill:
+            The scrupt will generat bull and mark it as approval pending ...
+
+
+
+Nexora Admin USer:
+
+    1) Opens the billing screen via admin application.
+    2) Open the bills one by one.
+    3) Verify the bill, if any change needed like discount addition, tax cahnges etc.... and then mark it as approved and status is not-paid.
+    4) Client will recieve a invocie email and they can pay the amount.
+    5) Now in billing screen, the status will change to paid ...
+
+
+    metric type ----- channel\global
+    metric value ------ JSON format
+
+    remove monthly 
+
+    free points, overgae points,

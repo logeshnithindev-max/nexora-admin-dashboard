@@ -1,0 +1,109 @@
+
+.primary {
+  padding: 11px 15px;
+  border: 1px solid #24cf89;
+  border-radius: 6px;
+  background: var(--green);
+  color: #063c2a;
+  font-size: 11px;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.primary:hover {
+  background: var(--green-2);
+}
+
+.primary span {
+  margin-left: 14px;
+}
+
+.primary:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.master-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid #24cf89;
+  border-radius: 7px;
+  background: var(--green);
+  color: #063c2a;
+  font-size: 10px;
+  font-weight: 700;
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.master-primary-button:hover {
+  background: var(--green-2);
+  transform: translateY(-1px);
+}
+
+.master-primary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  transform: none;
+}
+
+.master-primary-button.small {
+  padding: 8px 12px;
+  font-size: 9px;
+}
+
+.button-plus {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.retry-button {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text);
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.retry-button:hover {
+  background: #f5faf7;
+}
+
+.btn-spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: btn-spin 0.7s linear infinite;
+}
+
+@keyframes btn-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.primary,
+.danger,
+.table-action {
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.primary:active,
+.danger:active,
+.table-action:active {
+  transform: translateY(1px);
+}

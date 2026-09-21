@@ -1,0 +1,109 @@
+.status {
+  padding: 5px 8px;
+  border-radius: 12px;
+  background: #eff2f0;
+  color: #66706b;
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
+.status.growth,
+.status.active,
+.status.paid {
+  background: var(--green-soft);
+  color: #087c55;
+}
+
+.status.business {
+  background: #edf3ff;
+  color: #506da8;
+}
+
+.status.approval_pending,
+.status.overdue {
+  background: #fff4dd;
+  color: #986615;
+}
+
+.status.draft {
+  background: #f1f3f2;
+  color: #66706b;
+}
+
+.status.rejected {
+  background: #fff0ee;
+  color: #a23c32;
+}
+
+.status.void {
+  background: #f0f0f0;
+  color: #777;
+}
+
+.status.manual {
+  background: #edf3ff;
+  color: #506da8;
+}
+
+.channel-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 7px;
+  border-radius: 10px;
+  background: #f1f5f3;
+  color: #68746e;
+  font-size: 7px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 9px;
+  border: 1px solid #dfe5e1;
+  border-radius: 14px;
+  background: #fff;
+  color: #68716d;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: #c9d5cf;
+}
+
+.chip.active {
+  border-color: #bfeeda;
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.metric-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 7px;
+  border-radius: 10px;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.metric-status.active {
+  background: #eafff6;
+  color: #087c55;
+}
+
+.metric-status.inactive {
+  background: #f2f3f3;
+  color: #7a827e;
+}
+
+.status-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}

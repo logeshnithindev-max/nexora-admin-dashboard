@@ -1,0 +1,226 @@
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 10;
+  width: 228px;
+  padding: 26px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border-right: 1px solid #edf0ee;
+  color: var(--text);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.brand > div {
+  display: grid;
+}
+
+.brand b {
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: -0.7px;
+}
+
+.brand small {
+  margin-top: 4px;
+  color: var(--green-dark);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+}
+
+.logo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  color: var(--green);
+}
+
+.nexora-mark {
+  width: 31px;
+  height: 31px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+nav {
+  display: grid;
+  gap: 4px;
+  margin-top: 42px;
+}
+
+nav button {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #6f7672;
+  text-align: left;
+  font-size: 12px;
+}
+
+nav button i {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #d9dfdc;
+  border-radius: 5px;
+  color: #6b746f;
+  font-style: normal;
+}
+
+nav button i svg {
+  width: 15px;
+  height: 15px;
+}
+
+nav button:hover {
+  background: #f6faf8;
+  color: var(--ink);
+}
+
+nav button.active {
+  background: var(--green-soft);
+  color: #087b54;
+  font-weight: 600;
+}
+
+nav button.active i {
+  border-color: var(--green-2);
+  background: var(--green);
+  color: #06432e;
+}
+
+nav button span {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.help {
+  margin-top: auto;
+  padding: 15px;
+  border: 1px solid #d8f5e8;
+  border-radius: 10px;
+  background: #f5fff9;
+}
+
+.help b {
+  color: var(--ink);
+  font-size: 11px;
+}
+
+.help p {
+  margin: 7px 0 10px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.help button {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--green-dark);
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 15px;
+  padding: 14px 5px 0;
+  border-top: 1px solid #edf0ee;
+}
+
+.profile > i {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--green-soft);
+  color: var(--green-dark);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.profile span {
+  display: grid;
+  flex: 1;
+}
+
+.profile b {
+  color: var(--ink);
+  font-size: 10px;
+}
+
+.profile small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 8px;
+}
+
+.profile button {
+  border: 0;
+  background: none;
+  color: #a0a6a3;
+}
+
+.collapse-button {
+  position: absolute;
+  inset-inline-end: -13px;
+  top: 78px;
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+  color: #66706b;
+  box-shadow: 0 3px 10px rgba(15, 30, 23, 0.08);
+}
+
+[dir="rtl"] .sidebar {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left: 1px solid #edf0ee;
+}
+
+[dir="rtl"] nav button,
+[dir="rtl"] th,
+[dir="rtl"] td,
+[dir="rtl"] .choices button {
+  text-align: right;
+}
+
+[dir="rtl"] .plan > div small {
+  float: left;
+}
+
+[dir="rtl"] .help button {
+  direction: rtl;
+}

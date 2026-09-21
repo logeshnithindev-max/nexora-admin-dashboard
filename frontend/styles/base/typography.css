@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+[dir="rtl"] body {
+  font-family: Inter, "Noto Sans Arabic", Tahoma, sans-serif;
+}
+
+.page-title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.page-title h1 {
+  max-width: 720px;
+  margin: 9px 0 7px;
+  color: var(--ink);
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -1.2px;
+}
+
+.page-title h1 em {
+  color: var(--green-dark);
+  font-style: normal;
+}
+
+.page-title p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tag {
+  display: inline-block;
+  color: var(--green-dark);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}

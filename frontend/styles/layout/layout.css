@@ -1,0 +1,87 @@
+.content {
+  min-height: 100vh;
+  margin-left: 228px;
+}
+
+.content > header {
+  position: sticky;
+  top: 0;
+  z-index: 8;
+  height: 68px;
+  padding: 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  background: rgba(244, 245, 246, 0.93);
+  color: #777e7a;
+  font-size: 11px;
+  backdrop-filter: blur(10px);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid #dce3df;
+  border-radius: 6px;
+  background: #fff;
+  color: #4e5953;
+  font-size: 10px;
+}
+
+.inner {
+  padding: 32px 38px 70px;
+}
+
+.menu-collapsed .sidebar {
+  width: 72px;
+  padding-inline: 10px;
+}
+
+.menu-collapsed .sidebar .brand {
+  padding-inline: 8px;
+}
+
+.menu-collapsed .sidebar .brand > div,
+.menu-collapsed nav button span,
+.menu-collapsed .help,
+.menu-collapsed .profile span,
+.menu-collapsed .profile > button {
+  display: none;
+}
+
+.menu-collapsed nav button {
+  justify-content: center;
+  padding-inline: 10px;
+}
+
+.menu-collapsed nav button i {
+  width: 30px;
+  height: 30px;
+}
+
+.menu-collapsed .profile {
+  justify-content: center;
+}
+
+.menu-collapsed .content {
+  margin-inline-start: 72px;
+}
+
+[dir="rtl"] .content {
+  margin-left: 0;
+  margin-right: 228px;
+}
+
+[dir="rtl"] .menu-collapsed .content {
+  margin-right: 72px;
+  margin-left: 0;
+}

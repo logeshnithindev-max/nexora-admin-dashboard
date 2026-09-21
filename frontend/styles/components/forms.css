@@ -1,0 +1,225 @@
+.fields {
+  display: grid;
+  gap: 14px;
+}
+
+.fields.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.fields.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  color: #5c6560;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 11px;
+  border: 1px solid #dfe4e1;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  color: var(--ink);
+  font-size: 11px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--green-2);
+  box-shadow: 0 0 0 3px rgba(53, 232, 158, 0.13);
+}
+
+input:disabled {
+  background: #f3f5f4;
+  color: #929995;
+}
+
+textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.id-preview {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.id-preview code {
+  padding: 5px 8px;
+  border-radius: 5px;
+  background: #f3f6f4;
+  color: #69736e;
+  font-size: 8px;
+}
+
+.choices,
+.providers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-bottom: 17px;
+}
+
+.choices button,
+.providers button {
+  display: flex;
+  gap: 10px;
+  padding: 11px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #fff;
+  color: var(--text);
+  text-align: left;
+}
+
+.choices button > i {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #d2d9d5;
+  border-radius: 50%;
+  color: #063d2a;
+  font-size: 9px;
+  font-style: normal;
+  text-align: center;
+}
+
+.choices span {
+  display: grid;
+}
+
+.choices b {
+  font-size: 10px;
+}
+
+.choices small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 8px;
+}
+
+.choices button.active,
+.providers button.active {
+  border-color: var(--green-2);
+  background: var(--green-soft);
+}
+
+.choices button.active > i {
+  border-color: var(--green);
+  background: var(--green);
+}
+
+.providers {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.providers button {
+  display: grid;
+  justify-items: center;
+  font-size: 9px;
+  text-transform: capitalize;
+}
+
+.providers i {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #f0f4f2;
+  color: var(--green-dark);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.toggle input {
+  display: none;
+}
+
+.toggle i {
+  width: 30px;
+  height: 17px;
+  border-radius: 18px;
+  background: #cbd3cf;
+}
+
+.toggle input:checked + i {
+  background: var(--green);
+  box-shadow: inset 13px 0 0 2px #fff;
+}
+
+.workspace-editor input[readonly] {
+  background: #f4f6f5;
+  color: #89908c;
+}
+
+.select-shell {
+  position: relative;
+}
+
+.select-shell select {
+  appearance: none;
+  padding-right: 32px;
+}
+
+.select-shell:hover select:not(:disabled) {
+  border-color: #cdd7d2;
+}
+
+.select-shell select:focus {
+  border-color: var(--green-2);
+}
+
+.select-shell .chevron {
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  pointer-events: none;
+  color: #7c8580;
+  transform: translateY(-50%);
+}
+
+.select-shell:focus-within .chevron {
+  color: var(--green-dark);
+}
+
+.select-shell.is-disabled select {
+  cursor: not-allowed;
+}
+
+.select-shell.is-disabled .chevron {
+  opacity: 0.5;
+}
+
+.num-input {
+  text-align: right;
+}
+
+.field-error {
+  margin-top: 4px;
+  color: #b33f35;
+  font-size: 8px;
+}

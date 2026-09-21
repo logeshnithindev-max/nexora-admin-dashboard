@@ -1,0 +1,39 @@
+.table-panel {
+  padding: 8px 18px;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+th {
+  padding: 14px 12px;
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px 12px;
+  border-top: 1px solid #edf0ee;
+}
+
+td code {
+  color: #60716a;
+  font-size: 8px;
+}
+
+.master-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.master-table-wrapper code {
+  font-size: 8px;
+}

@@ -1,0 +1,7 @@
+.login-shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 20% 15%, #dfeee8, transparent 32%), #f4f7f5; }
+.login-card { width: min(420px, 100%); padding: 38px; display: grid; gap: 18px; }
+.login-card h1 { margin: 0; }
+.login-card > p { margin: 0; color: var(--muted); font-size: 13px; }
+.login-card button { margin-top: 5px; }
+.brand.dark { color: var(--ink); margin-bottom: 20px; }
+.brand.dark > span { background: #173c30; color: #a9ddc9; }

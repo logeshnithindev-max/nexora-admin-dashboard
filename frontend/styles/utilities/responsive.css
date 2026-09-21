@@ -1,0 +1,237 @@
+@media (max-width: 1100px) {
+  .metrics-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .dashboard-grid,
+  .onboard {
+    grid-template-columns: 1fr;
+  }
+
+  .ready {
+    position: static;
+  }
+
+  .plan-grid,
+  .usage-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .split-view {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 850px) {
+  .master-hero {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .metrics-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .billing-items-head {
+    display: none;
+  }
+
+  .billing-item-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .invoice-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    width: 68px;
+    padding: 22px 9px;
+  }
+
+  .sidebar .brand > div,
+  .sidebar nav button:not(.active),
+  .help,
+  .profile span,
+  .profile button {
+    display: none;
+  }
+
+  .sidebar nav button {
+    padding: 10px;
+  }
+
+  .content {
+    margin-left: 68px;
+  }
+
+  .content > header {
+    padding: 0 18px;
+  }
+
+  .inner {
+    padding: 25px 18px 55px;
+  }
+
+  .page-title {
+    align-items: flex-start;
+  }
+
+  .page-title h1 {
+    font-size: 24px;
+  }
+
+  .stats,
+  .fields.two,
+  .plan-grid,
+  .usage-grid,
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    border: 0;
+  }
+
+  .stat,
+  .stat + .stat {
+    padding: 14px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .providers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fields.three,
+  .selector-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .repeat-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nested-row {
+    grid-template-columns: 1fr 1fr 34px;
+  }
+
+  .nested-row input:nth-of-type(2) {
+    grid-column: 1 / 3;
+  }
+
+  .editor-actions {
+    flex-wrap: wrap;
+  }
+
+  .metric-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .master-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .master-tabs {
+    overflow-x: auto;
+  }
+
+  .metric-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .invoice-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .invoice-search {
+    max-width: none;
+  }
+
+  .invoice-date-range {
+    flex-wrap: wrap;
+  }
+
+  .invoice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .billing-summary-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .billing-item-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .master-hero {
+    padding: 18px;
+  }
+
+  .master-hero h1 {
+    font-size: 24px;
+  }
+
+  .master-content-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .metrics-card-grid {
+    padding: 0 14px 14px;
+  }
+
+  .metric-modal-backdrop {
+    padding: 10px;
+  }
+
+  .metric-modal {
+    max-height: calc(100vh - 20px);
+    border-radius: 10px;
+  }
+
+  .metric-modal-header,
+  .metric-modal form {
+    padding: 16px;
+  }
+
+  .billing-item-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .login-card {
+    padding: 25px;
+  }
+
+  .choices,
+  .providers {
+    grid-template-columns: 1fr;
+  }
+
+  .billing-summary-layout {
+    padding: 14px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+      "id": 1,
+      "metric_name": "Active Users",
+      "metric_key": "active_users",
+      "config": [
+        {
+          "label": "free_limit",
+          "input_type": "number"
+        },
+        {
+          "label": "overage_price",
+          "input_type": "number"
+        },
+        {
+          "label": "period_cycle",
+          "input_type": "select",
+          "options": ["daily", "weekly", "monthly", "yearly","custom"]
+        }
+      ],
+      "is_active": true
+    }
